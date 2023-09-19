@@ -1,0 +1,237 @@
+{% extends 'index.html'%}
+{%block title%}Home{%endblock title%}
+{%block body%}
+<div class="container my-3">
+  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+      <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+      <center><img src="/static/pics/eng_1.jpg" class="CenterImage" alt="Slide 1" width="500" height="650"></center>
+      <div class="carousel-caption d-none d-md-block">
+         <h5 style="font-size: 3.5rem; color: yellow;top: 8px; position: relative;">Best Naruto Merch</h5>
+         <p style="font-size: 2rem; color:yellow; top: 30px; position: relative;">Starting at $50.</p>
+    </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+    <center><img src="/static/pics/eng_2.jpg" class="CenterImage" alt="Slide 2" width="500" height="650"></center>
+      <div class="carousel-caption d-none d-md-block"> 
+        <h5 style="position: relative;top: -10px; font-size: 3rem;color: rgb(13, 5, 243);">Naruto Framed Poster</h5>
+        <p style="position: relative;top: 25px; font-size: 2rem; color: rgb(13, 5, 243);">Starting at $100</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+    <center><img src="/static/pics/eng_3.jpg" class="CenterImage" alt="Slide 3" width="500" height="650"></center>
+      <div class="carousel-caption d-none d-md-block">
+
+         <h5 style="position: relative;top: 10px; font-size: 3rem;color: yellow;">Naruto 3D Figures</h5>
+         <p style="position: relative;top: 20px; font-size: 2rem;color: yellow;">Starting at $20</p>
+      </div>
+    </div>
+  </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<div class="container my-4">
+ <h1 class="my-4 text-center">Select Anything from below</h1>
+ <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+   <div class="col">
+     <div class="card shadow-sm">
+      <img src="/static/pics/biology_2.jpg" class="d-line" alt="...">
+       <div class="card-body">
+         <p class="card-text"></p>
+          <div class="d-flex justify-content-between align-items-center">
+           <div class="btn-group">
+             <button type="button" class="btn btn-sm btn-outline-secondary" >Buy</button>
+             <button type="button" class="btn btn-sm btn-outline-secondary" >Add to Wishlist</button>
+           </div>
+           <div class="button">
+            <input type="checkbox" id="liked">
+            <label for="liked">
+              <ion-icon name="heart"></ion-icon>
+            </label>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class="col">
+     <div class="card shadow-sm">
+      <img src="/static/pics/biology_3.jpg" class="d-line" alt="...">
+       <div class="card-body">
+         <p class="card-text"></p>
+         <div class="d-flex justify-content-between align-items-center">
+           <div class="btn-group">
+             <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+             <button type="button" class="btn btn-sm btn-outline-secondary">Add to Wishlist</button>
+           </div>
+           <div class="button">
+            <input type="checkbox" id="liked">
+            <label for="liked">
+              <ion-icon name="heart"></ion-icon>
+            </label>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class="col">
+     <div class="card shadow-sm">
+      <img src="/static/pics/biology_4.jpg" class="d-block" alt="...">
+       <div class="card-body">
+         <p class="card-text"></p>
+         <div class="d-flex justify-content-between align-items-center">
+           <div class="btn-group">
+             <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+             <button type="button" class="btn btn-sm btn-outline-secondary">Add to Wishlist</button>
+           </div>
+           <div class="button">
+            <input type="checkbox" id="liked">
+            <label for="liked">
+              <ion-icon name="heart"></ion-icon>
+            </label>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   <div class="col">
+     <div class="card shadow-sm">
+      <img src="/static/open libraray img/bio_1.0.jpg" alt="..." width="420" height="400">
+       <div class="card-body">
+         <p class="card-text"></p>
+         <div class="d-flex justify-content-between align-items-center">
+           <div class="btn-group">
+             <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+             <button type="button" class="btn btn-sm btn-outline-secondary">Add to Wishlist</button>
+           </div>
+           <div class="button">
+            <input type="checkbox" id="liked">
+            <label for="liked">
+              <ion-icon name="heart"></ion-icon>
+            </label>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class="col">
+     <div class="card shadow-sm">
+      <img src="/static/open libraray img/bio_1.jpg" alt="..." width="420" height="400">
+       <div class="card-body">
+         <p class="card-text"></p>
+         <div class="d-flex justify-content-between align-items-center">
+           <div class="btn-group">
+             <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+             <button type="button" class="btn btn-sm btn-outline-secondary">Add to Wishlist</button>
+           </div>
+           <div class="button">
+            <input type="checkbox" id="liked">
+            <label for="liked">
+              <ion-icon name="heart"></ion-icon>
+            </label>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class="col">
+     <div class="card shadow-sm">
+      <img src="/static/open libraray img/bio_2.0.jpg" alt="..." width="420" height="400">
+       <div class="card-body">
+         <p class="card-text"></p>
+         <div class="d-flex justify-content-between align-items-center">
+           <div class="btn-group">
+             <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+             <button type="button" class="btn btn-sm btn-outline-secondary">Add to Wishlist</button>
+           </div>
+           <div class="button">
+            <input type="checkbox" id="liked">
+            <label for="liked">
+              <ion-icon name="heart"></ion-icon>
+            </label>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   <div class="col">
+     <div class="card shadow-sm">
+      <img src="/static/open libraray img/bio_2.jpg" alt="..." width="420" height="550">
+       <div class="card-body">
+         <p class="card-text"></p>
+         <div class="d-flex justify-content-between align-items-center">
+           <div class="btn-group">
+             <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+             <button type="button" class="btn btn-sm btn-outline-secondary">Add to Wishlist</button>
+           </div>
+           <div class="button">
+            <input type="checkbox" id="liked">
+            <label for="liked">
+              <ion-icon name="heart"></ion-icon>
+            </label>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class="col">
+     <div class="card shadow-sm">
+      <img src="/static/open libraray img/bio_3.0.jpg" alt="..." width="420" height="550">
+       <div class="card-body">
+         <p class="card-text"></p>
+         <div class="d-flex justify-content-between align-items-center">
+           <div class="btn-group">
+             <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+             <button type="button" class="btn btn-sm btn-outline-secondary">Add to Wishlist</button>
+           </div>
+            <div class="button">
+             <input type="checkbox" id="liked">
+             <label for="liked">
+               <ion-icon name="heart"></ion-icon>
+             </label>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class="col">
+     <div class="card shadow-sm">
+      <img src="/static/open libraray img/math_1.0.jpg" alt="..." width="420" height="550">
+       <div class="card-body">
+         <p class="card-text"></p>
+         <div class="d-flex justify-content-between align-items-center">
+           <div class="btn-group">
+             <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+             <button type="button" class="btn btn-sm btn-outline-secondary">Add to Wishlist</button>
+           </div>
+            <div class="button">
+              <input type="checkbox" id="liked">
+              <label for="liked">
+                <ion-icon name="heart"></ion-icon>
+              </label>
+            </div>
+         </div>
+       </div>
+     </div>
+   </div>
+</div>
+   
+
+
+
+
+{% endblock body%}

@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="ar" dir="ltr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.rtl.min.css" integrity="sha384-WJUUqfoMmnfkBLne5uxXj+na/c7sesSJ32gI7GfCk4zO4GthUKhSEGyvQ839BC51" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/nhk.css">
+    <link rel="icon" href="/static/assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title> {%block title%} {%endblock title%} Book Buddy</title>
+  </head>
+  <body style="background-color: cyan;">
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container my-0">
+          <img src="/static/assets/logo.png" height="70" width="70" alt="..." href="home">
+          <h5 class="navbar-brand" href="home">Book Buddy</h5>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="order" href="About us">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="wishlist" href="wishlist">Your wishlist</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="contact" href="likes">Your recent likes</a>
+              </li>
+              <!-- <li class="nav-item"> -->
+                <!-- <a class="nav-link" href="about">About us</a> -->
+              <!-- </li> -->
+              
+              
+              
+                
+                <!-- <a class="nav-link dropdown-toggle xyz" href="home" > -->
+                <!-- Your list -->
+                <!-- </a> -->
+                
+                
+            
+            
+             <form class="d-flex" role="search">
+               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+               <button class="btn btn-outline-success" type="submit">Search</button>
+             </form>
+             <li class="nav-item">
+               <a class="nav-link active" aria-current="sign" href="/logout">Logout</a>
+           </div>
+         </div>
+       </nav>
+       {%block body%}
+       <div class="container my-3">
+         <div id="carouselExampleDark" class="carousel carousel-dark slide">
+           <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+           </div>
+             <div class="carousel-inner">
+             <div class="carousel-item active" data-bs-interval="10000">
+             <center><img src="/static/open libraray img/phy_4.0.jpg" class="CenterImage" alt="Slide 1" width="500" height="650"></center>
+             <div class="carousel-caption d-none d-md-block">
+                <h5 style="font-size: 3.5rem; color: yellow;top: 8px; position: relative;"></h5>
+                <p style="font-size: 2rem; color:yellow; top: 30px; position: relative;"></p>
+           </div>
+           </div>
+           <div class="carousel-item" data-bs-interval="2000">
+           <center><img src="/static/open libraray img/phy_2.0.jpg" class="CenterImage" alt="Slide 2" width="500" height="650"></center>
+             <div class="carousel-caption d-none d-md-block"> 
+               <h5 style="position: relative;top: -10px; font-size: 3rem;color: rgb(13, 5, 243);"></h5>
+               <p style="position: relative;top: 25px; font-size: 2rem; color: rgb(13, 5, 243);"></p>
+             </div>
+           </div>
+           <div class="carousel-item">
+           <center><img src="/static/open libraray img/phy_3.jpg" class="CenterImage" alt="Slide 3" width="500" height="650"></center>
+             <div class="carousel-caption d-none d-md-block">
+       
+                <h5 style="position: relative;top: 10px; font-size: 3rem;color: yellow;"></h5>
+                <p style="position: relative;top: 20px; font-size: 2rem;color: yellow;"></p>
+             </div>
+           </div>
+         </div>
+           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+           </button>
+           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+           </button>
+         </div>
+       </div>
+       
+       <div class="container my-4">
+        <h1 class="my-4 text-center">Select Anything from below</h1>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+             <img src="/static/open libraray img/eng_1.jpg" class="d-line" alt="..." height="500">
+              <div class="card-body">
+                <p class="card-text"></p>
+                 <div class="d-flex justify-content-between align-items-center">
+                  </div>
+                    <p>
+                      The boy then encounters a wise alchemist, who teaches him to realize his true self. Together, 
+                      they risk a journey through the territory of warring tribes, where Santiago is forced to
+                      demonstrate his oneness with the "Soul of the World" by turning himself into a dust storm 
+                      before he is allowed to proceed.When he reaches the pyramids and begins digging, he is robbed
+                      by thieves, who ask him what he is digging for; he replies that a dream has led him to buried treasure. 
+                      The thieves scoff, and the leader remarks about a dream he once had about treasure under a tree at a
+                       ruined church. Santiago realizes the treasure he sought was where he had his original dream all along.
+                    </p>
+                    <div class="btn-group">
+                      <a class="btn btn-primary" href="book1" role="button">Learn more</a>  
+                  <div class="button">
+                   <input type="checkbox" id="liked">
+                   <label for="liked">
+                     <ion-icon name="heart"></ion-icon>
+                   </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+             <img src="/static/open libraray img/eng_2.jpg" class="d-line" alt="..." height="500">
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Wishlist</button>
+                  </div>
+                  <div class="button">
+                   <input type="checkbox" id="liked">
+                   <label for="liked">
+                     <ion-icon name="heart"></ion-icon>
+                   </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+             <img src="/static/open libraray img/socio_1.0.jpg" class="d-block" alt="..." height="500">
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Wishlist</button>
+                  </div>
+                  <div class="button">
+                   <input type="checkbox" id="liked">
+                   <label for="liked">
+                     <ion-icon name="heart"></ion-icon>
+                   </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+       
+          <div class="col">
+            <div class="card shadow-sm">
+             <img src="/static/open libraray img/bio_1.0.jpg" alt="..." width="420" height="500">
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Wishlist</button>
+                  </div>
+                  <div class="button">
+                   <input type="checkbox" id="liked">
+                   <label for="liked">
+                     <ion-icon name="heart"></ion-icon>
+                   </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+             <img src="/static/open libraray img/bio_1.jpg" alt="..." width="420" height="500">
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Wishlist</button>
+                  </div>
+                  <div class="button">
+                   <input type="checkbox" id="liked">
+                   <label for="liked">
+                     <ion-icon name="heart"></ion-icon>
+                   </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+             <img src="/static/open libraray img/bio_2.0.jpg" alt="..." width="420" height="500">
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Wishlist</button>
+                  </div>
+                  <div class="button">
+                   <input type="checkbox" id="liked">
+                   <label for="liked">
+                     <ion-icon name="heart"></ion-icon>
+                   </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+       
+          <div class="col">
+            <div class="card shadow-sm">
+             <img src="/static/open libraray img/bio_2.jpg" alt="..." width="420" height="500">
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Wishlist</button>
+                  </div>
+                  <div class="button">
+                   <input type="checkbox" id="liked">
+                   <label for="liked">
+                     <ion-icon name="heart"></ion-icon>
+                   </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+             <img src="/static/open libraray img/bio_3.0.jpg" alt="..." width="420" height="500">
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Wishlist</button>
+                  </div>
+                   <div class="button">
+                    <input type="checkbox" id="liked">
+                    <label for="liked">
+                      <ion-icon name="heart"></ion-icon>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+             <img src="/static/open libraray img/math_1.0.jpg" alt="..." width="420" height="500">
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Wishlist</button>
+                  </div>
+                   <div class="button">
+                     <input type="checkbox" id="liked">
+                     <label for="liked">
+                       <ion-icon name="heart"></ion-icon>
+                     </label>
+                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+       {% endblock body%}
+    <!--FOOTER-->
+    <section class="footerlogo">
+      <div class="logo" data-aos="fade-in">
+        <img src="img/logo 1.png" alt="" />
+      </div>
+    </section>
+    <section id="footer">
+      <footer>
+        <div class="footer">
+          <section class="foot1" data-aos="fade-right">
+            <h3>BookBuddy</h3>
+            <p>
+              Your daily assessment book company
+            </p>
+          </section>
+          <section class="foot2" data-aos="fade-right">
+            <h3>LINKS</h3>
+            <a href="home">Home</a>
+            <a href="about">About Us</a>
+            <a href="about">Blog</a>
+            <a href="login">Contact Us</a>
+          </section>
+  
+          <section class="foot3" data-aos="fade-left">
+            <h3>OTHER</h3>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Cookie Policy</a>
+          </section>
+          <section class="foot4" data-aos="fade-left">
+            <h3>ANY QUESTIONS?</h3>
+            <a href="emailto:support@websitename.com"
+              ><span><i class="fa fa-envelope"></i></span
+              ><span>support@bookbuddy.com</span></a
+            >
+            <a href="tel:xxxxxxxxx"
+              ><span><i class="fa fa-phone"></i></span
+              ><span>(+91)-96675-30619</span></a
+            >
+          </section>
+        </div>
+      </footer>
+      <div class="sub-footer">
+        <div data-aos="fade-in" data-aos-anchor=".foot3">
+          <i class="fa-brands fa-instagram insta"></i>
+          <i class="fa-brands fa-facebook fac"></i>
+          <i class="fa-brands fa-twitter twi"></i>
+        </div>
+      </div>
+      <div class="sub-footer">
+        Copyright ©2023 All rights reserved | Book Buddy
+      </div>
+    </section>
+  
+    <!-- Swiper -->
+  
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper1 = new Swiper(".mySwiper1", {
+        spaceBetween: 0,
+        speed: 1000,
+        loop: Infinity,
+        centeredSlides: true,
+        autoplay: {
+          delay: 4500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination1",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 1,
+            spaceBetween: 50,
+          },
+        },
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        freeMode: true,
+        loop: Infinity,
+        pagination: {
+          el: ".swiper-pagination2",
+          clickable: true,
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+        },
+      });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+      });
+    </script>
+     <!-- Optional JavaScript; choose one of the two! -->
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
